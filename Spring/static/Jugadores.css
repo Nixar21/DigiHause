@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #1B0057;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  background: #27005D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 44px;
+  height: 72px;
+}
+
+.logo {
+  font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 22px;
+}
+
+.navbar-menu a {
+  color: #D2AFFF;
+  font-size: 1.08rem;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.18s;
+}
+
+.navbar-menu a:hover {
+  color: #fff;
+}
+
+.icon {
+  font-size: 1.15em;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.login-btn {
+  background: #4B0082;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 22px;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.login-btn:hover {
+  background: #6f25be;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #D2AFFF;
+  background: transparent;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.main-equipos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0 44px 44px 44px;
+  min-height: 80vh;
+}
+
+.equipos-section {
+  flex: 2;
+  margin-top: 32px;
+  min-width: 380px;
+}
+
+.equipos-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 0;
+}
+.search-bar input {
+  background: #D2AFFF;
+  color: #27005D;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 12px 16px;
+  font-size: 1.1em;
+  width: 320px;
+  outline: none;
+}
+.search-btn {
+  background: #D2AFFF;
+  color: #27005D;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 1.19em;
+}
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.mvps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.mvp-card {
+  background: #24244D;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 10px 10px 10px;
+  min-width: 150px;
+  min-height: 250px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.mvp-card img {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.mvp-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.mvp-name {
+  font-size: 1.03em;
+  color: #fff;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+}
+.mvp-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.92em;
+  color: #BFCFFF;
+  gap: 3px;
+}
+.flag {
+  font-size: 1em;
+  color: #D2AFFF;
+  margin-top: 2px;
+}
+
+.aside-right {
+  flex: 1;
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  gap: 32px;
+}
+
+.aside-ad {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 0 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+}
+.aside-ad img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 8px;
+}
+.ad-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 24px;
+  font-size: 1em;
+  margin-top: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.clasificacion-box {
+  background: #4B0082;
+  border-radius: 25px;
+  padding: 24px 20px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.clasificacion-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sponsor-dot {
+  width: 13px;
+  height: 13px;
+  background: #D2AFFF;
+  border-radius: 50%;
+  display: inline-block;
+}
+.sponsor-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+}
+.sponsor-label {
+  font-size: 0.9em;
+  color: #C1C1C1;
+}
+
+.clasificacion-title {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.clasificacion-tabs {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+.tab {
+  background: #27005D;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 5px 17px;
+  font-size: 0.97em;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.15s, background 0.15s;
+}
+.tab.active,
+.tab:hover {
+  background: #D2AFFF;
+  color: #27005D;
+  opacity: 1;
+}
+
+.clasificacion-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.clasificacion-table th,
+.clasificacion-table td {
+  text-align: left;
+  padding: 6px 8px;
+  font-size: 1em;
+}
+
+.clasificacion-table th {
+  color: #D2AFFF;
+  font-weight: 600;
+}
+
+.clasificacion-table td {
+  color: #fff;
+}
+
+.ver-todo-btn {
+  background: #D2AFFF;
+  color: #4B0082;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 0 7px 0;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+  transition: background 0.15s;
+}
+.ver-todo-btn:hover {
+  background: #fff;
+}
+
+@media (max-width: 1100px) {
+  .main-equipos {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 8px 28px 8px;
+  }
+  .aside-right {
+    margin-top: 16px;
+    min-width: unset;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .aside-ad, .clasificacion-box {
+    width: 100%;
+    max-width: 100%;
+  }
+  .mvps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .mvps-grid {
+    grid-template-columns: 1fr;
+  }
+  .equipos-section h2 {
+    font-size: 1.3rem;
+  }
+}

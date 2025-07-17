@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>login</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Registro e Inicio de Sesión</title>
+  <link rel="stylesheet" href="../static/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <h1>ELBASK</h1>
-
-    <h2>INICIAR SESION</h2>
-    <label for="login-user">Usuario:</label>
-    <input type="text" id="login-user" name="username" required>
-
-    <label for="login-pass">Contraseña:</label>
-    <input type="password" id="login-pass" name="password" required>
-
-    <button type="submit">Entrar</button>
-
-    <h2>Registrarse</h2>
-    <label for="reg-user">Usuario:</label>
-    <input type="text" id="reg-user" name="username" required>
-
-    <label for="reg-pass">Contraseña:</label>
-    <input type="password" id="reg-pass" name="password" required>
-
-    <button type="submit">Registrarse</button>
-
-
+  <div class="container">
+    <h1 class="logo">ELBASK</h1>
+    <div class="main-box">
+      <div class="register-section">
+        <h2>Registrarse</h2>
+        <form>
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Correo" required>
+          <input type="password" placeholder="Contraseña" required>
+          <input type="password" placeholder="Confirmar contraseña" required>
+        </form>
+      </div>
+      <div class="login-section">
+        <h2>Inicio Sesión</h2>
+        <div class="login-buttons">
+          <button class="login-btn">
+            <span class="icon">&#128100;</span>
+            Usar teléfono, correo o nombre de usuario
+          </button>
+          <button class="login-btn google">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="icon-img">
+            Continuar con Google
+          </button>
+          <button class="login-btn facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="icon-img">
+            Continuar con Facebook
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>ELBASK - Equipos Nacionales</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Equipos Nacionales</title>
+  <link rel="stylesheet" href="../static/Equipo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Encabezado -->
-    <header>
-        <div>
-            <h1>ELBASK</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Partidos</a></li>
-                    <li><a href="#">Noticia</a></li>
-                    <li><a href="#">Clasificación</a></li>
-                    <li><a href="#">Calendario</a></li>
-                    <li><a href="#">Más</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">ES</a></li>
-                </ul>
-            </nav>
+  <header class="navbar">
+    <span class="logo">ELBASK</span>
+    <nav class="navbar-menu">
+      <a href="#"><span class="icon">&#8962;</span> Inicio</a>
+      <a href="#"><span class="icon">&#9917;</span> Partidos</a>
+      <a href="#"><span class="icon">&#128240;</span> Noticia</a>
+      <a href="#"><span class="icon">&#128202;</span> Clasificación</a>
+      <a href="#"><span class="icon">&#128197;</span> Calendario</a>
+      <a href="#"><span class="icon">&#8942;</span> Mas</a>
+    </nav>
+    <div class="navbar-right">
+      <button class="login-btn">Login</button>
+      <div class="lang">
+        <span class="icon">&#127760;</span> ES <span class="icon">&#9662;</span>
+      </div>
+    </div>
+  </header>
+  <main class="main-grid">
+    <section class="equipos-section">
+      <h2 class="section-title">Equipos nacionales</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscando un equipo nacional...">
+        <button class="search-btn"><span class="icon">&#128269;</span></button>
+      </div>
+      <hr class="divider">
+      <div class="equipos-list">
+        <div class="equipo-item">Estados Unidos <span class="equipo-code">USA</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Serbia <span class="equipo-code">SRB</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Alemania <span class="equipo-code">GER</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Francia <span class="equipo-code">FRA</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Canada <span class="equipo-code">CAN</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Australia <span class="equipo-code">AUS</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Argentina <span class="equipo-code">ARG</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Japón <span class="equipo-code">JPN</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Nueva Zelanda <span class="equipo-code">NZL</span> <span class="chevron">&#8250;</span></div>
+        <div class="equipo-item">Sudan del Sur <span class="equipo-code">SSD</span> <span class="chevron">&#8250;</span></div>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <div class="ad-box">
+        <img src="https://via.placeholder.com/320x420/86A6FF/fff?text=Adobe+Creative+Cloud" alt="Adobe Creative Cloud Ad">
+        <div class="ad-details">
+          <strong>Adobe</strong><br>
+          Todas las apps de Creative Cloud por<br>
+          <span class="ad-price">Ar$ 34.025,20/mes*</span><br>
+          ¡Para individuos!<br>
+          <span class="ad-note">*Aplican términos y condiciones</span>
         </div>
-    </header>
-
-    <main>
-        <section>
-            <h2>Equipos nacionales</h2>
-            <div>
-                <input type="text" placeholder="Buscando un equipo nacional...">
-            </div>
-
-            <ul>
-                <li><button>Estados Unidos <span>USA</span> &gt;</button></li>
-                <li><button>Serbia <span>SRB</span> &gt;</button></li>
-                <li><button>Alemania <span>GER</span> &gt;</button></li>
-                <li><button>Francia <span>FRA</span> &gt;</button></li>
-                <li><button>Canada <span>CAN</span> &gt;</button></li>
-                <li><button>Australia <span>AUS</span> &gt;</button></li>
-                <li><button>Argentina <span>ARG</span> &gt;</button></li>
-                <li><button>Japón <span>JPN</span> &gt;</button></li>
-                <li><button>Nueva Zelanda <span>NZL</span> &gt;</button></li>
-                <li><button>Sudán del Sur <span>SSD</span> &gt;</button></li>
-            </ul>
-        </section>
-
-        <aside>
-            <h3>Yorch Publicitario</h3>
-            <div>
-                <p><strong>Nike</strong><br>SPONSOR</p>
-                <p>Clasificación Mundial FIBA, presentada por NIKE</p>
-                <div>
-                    <button>Hombre</button>
-                    <button>Mujer</button>
-                    <button>Niño</button>
-                    <button>Niña</button>
-                </div>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>PAIS</th>
-                            <th>+/-</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1.</td>
-                            <td>USA</td>
-                            <td>0</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </aside>
-
-    </main>
-
+      </div>
+      <div class="clasificacion-box">
+        <div class="clasificacion-header">
+          <span class="sponsor-dot"></span>
+          <span class="sponsor-text">Nike</span>
+          <span class="sponsor-label">sponsor</span>
+        </div>
+        <span class="clasificacion-title">Clasificación Mundial FIBA, presentada por NIKE</span>
+        <div class="clasificacion-tabs">
+          <button class="tab active">Hombre</button>
+          <button class="tab">Mujer</button>
+          <button class="tab">Niño</button>
+          <button class="tab">Niña</button>
+        </div>
+        <table class="clasificacion-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>PAÍS</th>
+              <th>+/-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1.</td><td>USA</td><td>=0</td></tr>
+          </tbody>
+        </table>
+        <button class="ver-todo-btn">VER LA CLASIFICACIÓN COMPLETA</button>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>

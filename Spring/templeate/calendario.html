@@ -1,87 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>ELBASK</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Calendario</title>
+  <link rel="stylesheet" href="../static/Calendario.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-    <nav>
-        <h1>ELBASK</h1>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Partidos</a></li>
-            <li><a href="#">Noticia</a></li>
-            <li><a href="#">Clasificación</a></li>
-            <li><a href="#">Calendario</a></li>
-            <li><a href="#">Más</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">ES</a></li>
-        </ul>
+  <header class="navbar">
+    <span class="logo">ELBASK</span>
+    <nav class="navbar-menu">
+      <a href="#"><span class="icon">&#8962;</span> Inicio</a>
+      <a href="#"><span class="icon">&#9917;</span> Partidos</a>
+      <a href="#"><span class="icon">&#128240;</span> Noticia</a>
+      <a href="#"><span class="icon">&#128202;</span> Clasificación</a>
+      <a href="#"><span class="icon">&#128197;</span> Calendario</a>
+      <a href="#"><span class="icon">&#8942;</span> Mas</a>
     </nav>
-    </header>
-
-    <h3>Publicidad de Schirado</h3>
-    <main>
-    <section>
-        <h2>Calendario: Todos</h2>
-        <div>
-        <nav>
-            <ul>
-                <li><a href="#">Todos</a></li>
-                <li><a href="#">Mundo</a></li>
-                <li><a href="#">África</a></li>
-                <li><a href="#">América</a></li>
-                <li><a href="#">Asia</a></li>
-                <li><a href="#">Europa</a></li>
-                <li><a href="#">Oceanía</a></li>
-            </ul>
-            <div>
-                <button>&lt;</button>
-                <span>Abril</span>
-            <button>&gt;</button>
-            <select>
-                <option>2025</option>
-            </select>
+    <div class="navbar-right">
+      <button class="login-btn">Login</button>
+      <div class="lang">
+        <span class="icon">&#127760;</span> ES <span class="icon">&#9662;</span>
+      </div>
+    </div>
+  </header>
+  <main class="main-calendar">
+    <section class="calendar-section">
+      <div class="calendar-banner">
+        <img src="https://via.placeholder.com/900x180/EEE4FF/4B0082?text=Reporte+del+estado+de+la+seguridad+electrónica+2025" alt="Reporte seguridad electrónica 2025">
+        <button class="banner-btn">Descarga el reporte</button>
+        <span class="banner-brand">Genetec</span>
+      </div>
+      <div class="calendar-header">
+        <h2>Calendario: <span class="calendar-filtro">Todos</span></h2>
+        <button class="calendar-filtros">FILTROS</button>
+      </div>
+      <div class="calendar-tabs">
+        <button class="tab active">Todos</button>
+        <button class="tab">Mundo</button>
+        <button class="tab">Africa</button>
+        <button class="tab">America</button>
+        <button class="tab">Asia</button>
+        <button class="tab">Europa</button>
+        <button class="tab">Oceania</button>
+      </div>
+      <div class="calendar-month-select">
+        <button class="month-arrow">&#60;</button>
+        <span class="calendar-month">Abril</span>
+        <span class="calendar-year">2025</span>
+        <button class="month-arrow">&#62;</button>
+      </div>
+      <div class="calendar-body">
+        <h3>Abril 2025</h3>
+        <div class="calendar-events">
+          <div class="calendar-event">
+            <img class="event-img" src="https://via.placeholder.com/90x50/0d194e/fff?text=EUROLEAGUE+WOMEN" alt="EuroLeague Women 2024-25">
+            <div class="event-info">
+              <div class="event-title">EuroLeague Women 2024 - 25</div>
+              <div class="event-range"><span class="icon">&#128197;</span> 17 SEP 2024 - 13 ABR 2025</div>
             </div>
-        </nav>
-            <button>Filtros</button>
+          </div>
+          <div class="calendar-event">
+            <img class="event-img" src="https://via.placeholder.com/90x50/e939aa/fff?text=EUROCUP+WOMEN" alt="EuroCup Women 2024-25">
+            <div class="event-info">
+              <div class="event-title">EuroCup Women 2024 - 25</div>
+              <div class="event-range"><span class="icon">&#128197;</span> 18 SEP 2024 - 3 ABR 2025</div>
+            </div>
+          </div>
         </div>
-
-
-        <div>
-        <article>
-            <h3>EuroLeague Women 2024 - 25</h3>
-            <p>17 SEP 2024 - 13 ABR 2025</p>
-        </article>
-        <article>
-            <h3>EuroCup Women 2024 - 25</h3>
-            <p>18 SEP 2024 - 3 ABR 2025</p>
-        </article>
-        </div>
+      </div>
     </section>
-
-    <aside>
-        <h3>FIBA Basketball</h3>
-        <small>1 ABR 2025</small>
-        <h4>Últimas noticias</h4>
-        <ul>
-        <li>
-            <h5>Río de Janeiro será la sede del Final 4 de la BCL...</h5>
-            <small>1 ABR 2025</small>
-        </li>
-        <li>
-            <h5>La NBA y la FIBA avanzarán en la...</h5>
-            <small>28 MAR 2025</small>
-        </li>
-        <li>
-            <h5>Nicaragua se entusiasma con el AmeriCup</h5>
-            <small>27 MAR 2025</small>
-        </li>
-        </ul>
-        <button>Ver todas las noticias</button>
+    <aside class="sidebar">
+      <div class="ad-box">
+        <img src="https://via.placeholder.com/370x120/E9E5F9/4B0082?text=Reporte+del+estado+de+la+seguridad+electrónica+2025" alt="Reporte seguridad electrónica 2025">
+      </div>
+      <div class="noticias-box">
+        <div class="noticias-header">
+          <span class="noticias-origen">FIBA Basketball</span>
+          <span class="noticias-fecha">1 ABR 2025</span>
+        </div>
+        <div class="noticias-title">Ultimas noticias</div>
+        <div class="noticia-item">
+          <img class="noticia-thumb" src="https://via.placeholder.com/54x34/282981/fff?text=RIO" alt="Rio Final 4">
+          <div class="noticia-text">
+            Rio de Janeiro sera la sede del Final 4 de la BCL....<br>
+            <span class="noticia-fecha">1 ABR 2025</span>
+          </div>
+        </div>
+        <div class="noticia-item">
+          <div class="noticia-thumb bg-alt"></div>
+          <div class="noticia-text">
+            La FIBA y la FIBA avanzaran en la....<br>
+            <span class="noticia-fecha">29 MAR 2025</span>
+          </div>
+        </div>
+        <div class="noticia-item">
+          <div class="noticia-thumb bg-alt2"></div>
+          <div class="noticia-text">
+            Nicaragua se entusiasma con el AmeriCup<br>
+            <span class="noticia-fecha">27 MAR 2025</span>
+          </div>
+        </div>
+        <button class="ver-todas-btn">VER TODAS LAS NOTICIAS</button>
+      </div>
     </aside>
-    </main>
-
+  </main>
 </body>
 </html>

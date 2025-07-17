@@ -1,96 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Noticias</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Noticias y Clasificación</title>
+  <link rel="stylesheet" href="../static/Noticia.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <span class="logo">ELBASK</span>
+    </div>
+    <nav class="navbar-menu">
+      <a href="#"><span class="icon">&#8962;</span> Inicio</a>
+      <a href="#"><span class="icon">&#9917;</span> Partidos</a>
+      <a href="#"><span class="icon">&#128240;</span> Noticia</a>
+      <a href="#"><span class="icon">&#128202;</span> Clasificación</a>
+      <a href="#"><span class="icon">&#128197;</span> Calendario</a>
+      <a href="#"><span class="icon">&#8942;</span> Mas</a>
+    </nav>
+    <div class="navbar-right">
+      <button class="login-btn">Login</button>
+      <div class="lang">
+        <span class="icon">&#127760;</span> ES <span class="icon">&#9662;</span>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="banner">
+      <img src="https://via.placeholder.com/728x90?text=Publicidad+Banner" alt="Banner Publicidad">
+    </div>
 
-    <header>
-        <h1>ELBASK</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Partidos</a></li>
-                <li><a href="#">Noticia</a></li>
-                <li><a href="#">Clasificación</a></li>
-                <li><a href="#">Calendario</a></li>
-                <li><a href="#">Más</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">ES</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <p>Publicidad de Adobe</p>
-    </section>
-
-    <section>
-        <h2>Noticias más importantes</h2>
-        <ul>
-            <li>
-                <article>
-                    <h3>NBA players who could play in FIBA EuroBasket 2025</h3>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h3>Curry’s amazing 52 vs. Jokic’s historic 61 TD: Who did it better?</h3>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h3>Jusuf Nurkic on EuroBasket: "Our goal is a medal"</h3>
-                </article>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Clasificación -->
-        <h3>Clasificación Mundial FIBA, presentada por NIKE</h3>
-        <div>
-            <button>Hombre</button>
-            <button>Mujer</button>
-            <button>Niño</button>
-            <button>Niña</button>
+    <section class="noticias-imp">
+      <h2>Noticias mas importantes</h2>
+      <div class="noticias-imp-content">
+        <div class="noticia-card">
+          <img src="https://via.placeholder.com/150x200/2D186B/fff?text=EUROBASKET" alt="Eurobasket" />
+          <span class="noticia-titulo">NBA players who could play in FIBA EuroBasket 2025</span>
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>PAÍS</th>
-                    <th>+/-</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>1.</td><td>USA</td><td>0</td></tr>
-                <tr><td>2.</td><td>Serbia</td><td>0</td></tr>
-                <tr><td>3.</td><td>Alemania</td><td>0</td></tr>
-                <tr><td>4.</td><td>Francia</td><td>0</td></tr>
-                <tr><td>5.</td><td>España</td><td>0</td></tr>
-            </tbody>
+        <div class="noticia-card">
+          <img src="https://via.placeholder.com/150x200/2D186B/fff?text=CHEF+or+JOKER" alt="Chef or Joker" />
+          <span class="noticia-titulo">Curry’s amazing 52 vs. Jokic’s historic 61 TD: Who did it better?</span>
+        </div>
+        <div class="noticia-card">
+          <img src="https://via.placeholder.com/150x200/2D186B/fff?text=EuroBasket" alt="Nurkic EuroBasket" />
+          <span class="noticia-titulo">Jusuf Nurkic on EuroBasket: "Our goal is a medal"</span>
+        </div>
+      </div>
+      <div class="clasificacion-box">
+        <div class="clasificacion-header">
+          <span class="sponsor-dot"></span>
+          <span class="sponsor-text">Nike</span>
+          <span class="sponsor-label">sponsor</span>
+        </div>
+        <span class="clasificacion-title">Clasificación Mundial FIBA, presentada por NIKE</span>
+        <div class="clasificacion-tabs">
+          <button class="tab active">Hombre</button>
+          <button class="tab">Mujer</button>
+          <button class="tab">Niño</button>
+          <button class="tab">Niña</button>
+        </div>
+        <table class="clasificacion-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>PAÍS</th>
+              <th>+/-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>USA</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Serbia</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Alemania</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Francia</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>España</td>
+              <td>=0</td>
+            </tr>
+          </tbody>
         </table>
-        <button>Ver la clasificación completa</button>
-
-    <section>
-        <h2>Todas las noticias</h2>
-        <form>
-            <input type="text" placeholder="Buscar una noticia">
-            <select name="tipo">
-                <option>Tipo de competencia</option>
-            </select>
-            <select name="region">
-                <option>Región</option>
-            </select>
-            <select name="genero">
-                <option>Género</option>
-            </select>
-            <select name="articulo">
-                <option>Artículo de noticia</option>
-            </select>
-        </form>
+        <button class="ver-todo-btn">VER LA CLASIFICACIÓN COMPLETA</button>
+      </div>
     </section>
 
+    <section class="todas-noticias">
+      <h2>Todas las noticias</h2>
+      <div class="filtros">
+        <input type="text" placeholder="Buscar">
+        <select title="Tipo de competencia">
+          <option>Tipo de competencia</option>
+        </select>
+        <select title="Región">
+          <option>Región</option>
+        </select>
+        <select title="Género">
+          <option>Género</option>
+        </select>
+        <select title="Artículo de noticia">
+          <option>Artículo de noticia</option>
+        </select>
+      </div>
+      <div class="noticias-list">
+        <div class="noticia-card-sm">
+          <img src="https://via.placeholder.com/100x60/2D186B/fff?text=News1" alt="News 1" />
+          <span class="noticia-titulo-sm">Ejemplo noticia 1</span>
+        </div>
+        <div class="noticia-card-sm">
+          <img src="https://via.placeholder.com/100x60/2D186B/fff?text=News2" alt="News 2" />
+          <span class="noticia-titulo-sm">Ejemplo noticia 2</span>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

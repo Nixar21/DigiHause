@@ -1,96 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>ELBASK</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Noticias y Para Ti</title>
+  <link rel="stylesheet" href="../static/Inicio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-    <h1>ELBASK</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Partidos</a></li>
-            <li><a href="#">Noticia</a></li>
-            <li><a href="#">Clasificación</a></li>
-            <li><a href="#">Calendario</a></li>
-            <li><a href="#">Más</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">ES</a></li>
-        </ul>
-    </nav>
-    </header>
-
-    <main>
-    <section>
-        <h2>Noticias más importantes</h2>
-        <article>
-            <h3>NBA players who could play in FIBA EuroBasket 2025</h3>
-            <p>NBA players who could play in EuroBasket</p>
-        </article>
-        <article>
-            <h3>Curry vs Jokic</h3>
-            <p>Curry's amazing 52 vs. Jokic’s historic 61 TD: Who did it better?</p>
-        </article>
-        <article>
-            <h3>Jusuf Nurkic</h3>
-            <p>Jusuf Nurkic on EuroBasket: "Our goal is a medal"</p>
-        </article>
+  <main class="main-container">
+    <!-- Noticias principales -->
+    <section class="noticias-section">
+      <h2 class="main-title">NOTICIAS MAS IMPORTANTES</h2>
+      <div class="noticias-cards">
+        <div class="noticia-card">
+          <img src="https://via.placeholder.com/200x110/2D186B/fff?text=Eurobasket" alt="Eurobasket">
+          <span class="noticia-txt">NBA players who could play in FIBA EuroBasket 2025</span>
+        </div>
+        <div class="noticia-card">
+          <img src="https://via.placeholder.com/200x110/2D186B/fff?text=Chef+or+Joker" alt="Chef or Joker">
+          <span class="noticia-txt">Curry’s amazing 52 vs. Jokic’s historic 61 TD: Who did it better?</span>
+        </div>
+        <div class="noticia-card">
+          <img src="https://via.placeholder.com/200x110/2D186B/fff?text=Nurkic+EuroBasket" alt="Nurkic EuroBasket">
+          <span class="noticia-txt">Jusuf Nurkic on EuroBasket: "Our goal is a medal"</span>
+        </div>
+      </div>
+      <div class="carousel-indicator"></div>
     </section>
 
-    <h2>Publicidad</h2>
-
-    <section>
-        <h2>Para ti</h2>
-        <article>
-            <h3>EuroLeague Mujer 2024-25</h3>
-            <p>5 agosto 2025</p>
-            <p>Most Valuable Player</p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Clasificación Mundial FIBA, presentada por NIKE</h2>
-        <p>Hombre | Mujer | Niño | Niña</p>
-        <table>
-            <thead>
-                <tr>
-                <th>#</th>
-                <th>País</th>
-                <th>+/-</th>
-            </tr>
-            </thead>
-        <tbody>
+    <!-- Publicidad y Clasificación -->
+    <section class="side-section">
+      <div class="ad-box">
+        <img src="https://via.placeholder.com/360x110/fff/FF9900?text=Publicidad+Tang" alt="Publicidad Tang">
+        <button class="ad-btn">CONSEGUÍLO ACÁ</button>
+      </div>
+      <div class="clasificacion-box">
+        <div class="clasificacion-header">
+          <span class="sponsor"><b>Nike</b> <span class="sponsor-label">sponsor</span></span>
+        </div>
+        <div class="clasificacion-titulo">
+          Clasificación Mundial FIBA, presentada por NIKE
+        </div>
+        <div class="clasificacion-tabs">
+          <button class="tab active">Hombre</button>
+          <button class="tab">Mujer</button>
+          <button class="tab">Niño</button>
+          <button class="tab">Niña</button>
+        </div>
+        <table class="clasificacion-table">
+          <thead>
             <tr>
-                <td>1.</td>
-                <td>USA</td>
-                <td>0</td>
+              <th>#</th>
+              <th>PAÍS</th>
+              <th>+/-</th>
             </tr>
-            <tr>
-                <td>2.</td>
-                <td>Serbia</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>3.</td>
-                <td>Alemania</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>4.</td>
-                <td>Francia</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>5.</td>
-                <td>España</td>
-                <td>0</td>
-            </tr>
-        </tbody>
+          </thead>
+          <tbody>
+            <tr><td>1.</td><td>USA</td><td>=0</td></tr>
+            <tr><td>2.</td><td>Serbia</td><td>=0</td></tr>
+            <tr><td>3.</td><td>Alemania</td><td>=0</td></tr>
+            <tr><td>4.</td><td>Francia</td><td>=0</td></tr>
+            <tr><td>5.</td><td>España</td><td>=0</td></tr>
+          </tbody>
         </table>
-            <a href="#">Ver la clasificación completa</a>
+        <button class="ver-todo-btn">VER LA CLASIFICACIÓN COMPLETA</button>
+      </div>
     </section>
-    </main>
 
+    <!-- Para ti -->
+    <section class="para-ti-section">
+      <h2 class="main-title right">PARA TI</h2>
+      <div class="para-ti-box">
+        <div class="para-ti-header">
+          <span class="para-ti-label">EuroLeague Mujer 2024-25</span>
+          <span class="para-ti-fecha">5 AGOSTO 2025</span>
+        </div>
+        <img src="https://via.placeholder.com/320x100/2D186B/fff?text=Most+Valuable+Player" alt="Most Valuable Player" class="para-ti-img">
+        <span class="para-ti-titulo">MOST VALUABLE PLAYER</span>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

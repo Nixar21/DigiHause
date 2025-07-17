@@ -1,121 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>partido</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Partidos y Resultados</title>
+  <link rel="stylesheet" href="../static/Partido.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <h1>ELBASK</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Partidos</a></li>
-            <li><a href="#">Noticia</a></li>
-            <li><a href="#">Clasificación</a></li>
-            <li><a href="#">Calendario</a></li>
-            <li><a href="#">Más</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">ES</a></li>
-        </ul>
+  <header class="navbar">
+    <div class="navbar-left">
+      <span class="logo">ELBASK</span>
+    </div>
+    <nav class="navbar-menu">
+      <a href="#"><span class="icon">&#8962;</span> Inicio</a>
+      <a href="#"><span class="icon">&#9917;</span> Partidos</a>
+      <a href="#"><span class="icon">&#128240;</span> Noticia</a>
+      <a href="#"><span class="icon">&#128202;</span> Clasificación</a>
+      <a href="#"><span class="icon">&#128197;</span> Calendario</a>
+      <a href="#"><span class="icon">&#8942;</span> Mas</a>
     </nav>
-    <H2>Partidos & Resultados: Todos</H2>
-    <table>
-        <thead>
-            <tr>
-                <th>Todos</th>
-                <th>Mundo</th>
-                <th>Africa</th>
-                <th>America</th>
-                <th>Asia</th>
-                <th>Europa</th>
-                <th>Oceania</th>
-            </tr>
-        </thead>
-    </table>
-    <h3>Abril 2025</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Mar</th>
-                <th>Mie</th>
-                <th>Jue</th>
-                <th>Vie</th>
-                <th>Sab</th>
-                <th>Dom</th>
-                <th>Lun</th>
-                <th>Mar</th>
-                <th>Mie</th>
-                <th>Jue</th>
-            </tr>
-        </thead>
-    </table>
-    <table>
-        <thead>
-            <tr>
-                <th>01</th>
-                <th>02</th>
-                <th>03</th>
-                <th>04</th>
-                <th>05</th>
-                <th>06</th>
-                <th>07</th>
-                <th>08</th>
-                <th>09</th>
-                <th>10</th>
-            </tr>
-        </thead>
-    </table>
-
-    <section>
-        <article>
-            <h3>NBA players who could play in FIBA EuroBasket 2025</h3>
-            <p>NBA players who could play in EuroBasket</p>
-        </article>
+    <div class="navbar-right">
+      <button class="login-btn">Login</button>
+      <div class="lang">
+        <span class="icon">&#127760;</span> ES <span class="icon">&#9662;</span>
+      </div>
+    </div>
+  </header>
+  <main class="main-partidos">
+    <section class="partidos-resultados">
+      <div class="partidos-header">
+        <h2>Partidos & Resultados: Todos</h2>
+        <button class="filtros-btn"><span class="icon">&#9881;</span> FILTROS</button>
+      </div>
+      <div class="partidos-tabs">
+        <button class="tab active">Todos</button>
+        <button class="tab">Mundo</button>
+        <button class="tab">Africa</button>
+        <button class="tab">America</button>
+        <button class="tab">Asia</button>
+        <button class="tab">Europa</button>
+        <button class="tab">Oceania</button>
+      </div>
+      <div class="partidos-fechas">
+        <span class="mes-ano">Abril 2025</span>
+        <div class="dias">
+          <span class="dia muted">Mar<br>01</span>
+          <span class="dia">Mié<br>02</span>
+          <span class="dia">Jue<br>03</span>
+          <span class="dia">Vie<br>04</span>
+          <span class="dia">Sáb<br>05</span>
+          <span class="dia selected">Dom<br>06</span>
+          <span class="dia">Lun<br>07</span>
+          <span class="dia">Mar<br>08</span>
+          <span class="dia">Mié<br>09</span>
+          <span class="dia muted">Jue<br>10</span>
+        </div>
+      </div>
+      <div class="resultados-list">
+        <div class="result-box">
+          <div class="result-titulo">
+            <span class="dot"></span> SABA Club Championship 2025
+          </div>
+          <div class="result-content">
+            <div class="grupo">FASE DE GRUPOS - GRUPO A</div>
+            <div class="score-row">
+              <span class="team">THD</span>
+              <span class="team bold">CBC</span>
+              <span class="final">FINAL</span>
+              <span class="score">51</span>
+              <span class="score bold">98</span>
+            </div>
+            <div class="grupo">FASE DE GRUPOS - GRUPO A</div>
+            <div class="score-row">
+              <span class="team">TND</span>
+              <span class="team bold">TCL</span>
+              <span class="final">FINAL</span>
+              <span class="score">118</span>
+              <span class="score bold">44</span>
+            </div>
+          </div>
+        </div>
+        <div class="result-box">
+          <div class="result-titulo">
+            <span class="dot"></span> BLC Asia - East 2025
+          </div>
+          <div class="result-content">
+            <div class="grupo">FASE DE GRUPOS - GRUPO A</div>
+            <div class="score-row">
+              <span class="team">PJB</span>
+              <span class="team bold">TYP</span>
+              <span class="final">FINAL</span>
+              <span class="score">64</span>
+              <span class="score bold">88</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    </header>
-    <h1>SABA Club Championship 2025</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Fase</th>
-                <th>Equipo 1</th>
-                <th>Equipo 2</th>
-                <th>Resultado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>FASE DE GRUPOS - GRUPO A</td>
-                <td>THD</td>
-                <td>CBC</td>
-                <td>51 - 98</td>
-            </tr>
-            <tr>
-                <td>FASE DE GRUPOS - GRUPO A</td>
-                <td>TND</td>
-                <td>TCL</td>
-                <td>118 - 44</td>
-            </tr>
-        </tbody>
-    </table>
-    <h1>BLC Asia - East 2025</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Fase</th>
-                <th>Equipo 1</th>
-                <th>Equipo 2</th>
-                <th>Resultado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>FASE DE GRUPOS - GRUPO A</td>
-                <td>PJB</td>
-                <td>TYP</td>
-                <td>64 - 88</td>
-            </tr>
-        </tbody>
-    </table>
+    <aside class="publicidad-lateral">
+      <img src="https://via.placeholder.com/300x600/F27AC3/fff?text=Adobe+Promo" alt="Adobe Promo" class="ad-img">
+      <div class="ad-texto">
+        <strong>Adobe</strong><br>
+        Crea más con recursos de IA y todas las apps<br>
+        <span class="promo">Aprovecha <span class="desc">60% de dcto*</span></span><br>
+        Para el plan de profesores y estudiantes
+      </div>
+    </aside>
+  </main>
 </body>
 </html>

@@ -1,144 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>ELBASK - Equipos Nacionales</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Equipos Nacionales</title>
+  <link rel="stylesheet" href="../static/Jugadores.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <span class="logo">ELBASK</span>
+    </div>
+    <nav class="navbar-menu">
+      <a href="#"><span class="icon">&#8962;</span> Inicio</a>
+      <a href="#"><span class="icon">&#9917;</span> Partidos</a>
+      <a href="#"><span class="icon">&#128240;</span> Noticia</a>
+      <a href="#"><span class="icon">&#128202;</span> Clasificación</a>
+      <a href="#"><span class="icon">&#128197;</span> Calendario</a>
+      <a href="#"><span class="icon">&#8942;</span> Mas</a>
+    </nav>
+    <div class="navbar-right">
+      <button class="login-btn">Login</button>
+      <div class="lang">
+        <span class="icon">&#127760;</span> ES <span class="icon">&#9662;</span>
+      </div>
+    </div>
+  </header>
 
-    <!-- Encabezado -->
-    <header>
-        <div>
-            <h1>ELBASK</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Partidos</a></li>
-                    <li><a href="#">Noticia</a></li>
-                    <li><a href="#">Clasificación</a></li>
-                    <li><a href="#">Calendario</a></li>
-                    <li><a href="#">Más</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">ES</a></li>
-                </ul>
-            </nav>
+  <main class="main-equipos">
+    <section class="equipos-section">
+      <h2>Equipos nacionales</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscando un equipo nacional...">
+        <button class="search-btn"><span class="icon">&#128269;</span></button>
+      </div>
+      <h3 class="subtitle">Últimos FIBA MVPs</h3>
+      <div class="mvps-grid">
+        <div class="mvp-card">
+          <img src="" alt="Arella Guirantes">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>Arella Guirantes</strong></span>
+            <div class="mvp-details">
+              <span>14 abr 1997</span>
+              <span class="flag">🇵🇷 PUR</span>
+            </div>
+          </div>
         </div>
-    </header>
-
-        <section>
-            <h2>Equipos nacionales</h2>
-            <div>
-                <input type="text" placeholder="Buscando un equipo nacional...">
+        <div class="mvp-card">
+          <img src="" alt="Florencia Chagas">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>Florencia Chagas</strong></span>
+            <div class="mvp-details">
+              <span>24 jun 2001</span>
+              <span class="flag">🇦🇷, 🇮🇹 ARG, ITA</span>
             </div>
-        </section>
-        <section>
-            <h3>Últimos FIBA MVPs</h3>
-            <div>
-                <article>
-                    <img src="#" alt="Arella Guirantes">
-                    <h4>Arella Guirantes</h4>
-                    <p>14 oct 1997</p>
-                    <span>PUR</span>
-                </article>
-                <article>
-                    <img src="#" alt="Florencia Chagas">
-                    <h4>Florencia Chagas</h4>
-                    <p>26 jun 2001</p>
-                    <span>ARG, ITA</span>
-                </article>
-                <article>
-                    <img src="#" alt="Julia Reisingerova">
-                    <h4>Julia Reisingerova</h4>
-                    <p>18 abr 1998</p>
-                    <span>CZE, GER</span>
-                </article>
-                <article>
-                    <img src="#" alt="Reka Lelik">
-                    <h4>Reka Lelik</h4>
-                    <p>13 abr 1999</p>
-                    <span>HUN</span>
-                </article>
-                <article>
-                    <img src="#" alt="Aja Wilson">
-                    <h4>Aja Wilson</h4>
-                    <p>07 ago 1996</p>
-                    <span>USA</span>
-                </article>
-                <article>
-                    <img src="#" alt="LeBron James">
-                    <h4>LeBron James</h4>
-                    <p>29 dic 1984</p>
-                    <span>USA</span>
-                </article>
-                <article>
-                    <img src="#" alt="Jerzy">
-                    <h4>Jerzy</h4>
-                    <p>-</p>
-                    <span>-</span>
-                </article>
-                <article>
-                    <img src="#" alt="Bruno">
-                    <h4>Bruno</h4>
-                    <p>-</p>
-                    <span>-</span>
-                </article>
-                <article>
-                    <img src="#" alt="Cameron">
-                    <h4>Cameron</h4>
-                    <p>-</p>
-                    <span>-</span>
-                </article>
+          </div>
+        </div>
+        <div class="mvp-card">
+          <img src="" alt="Julia Reisingerova">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>Julia Reisingerova</strong></span>
+            <div class="mvp-details">
+              <span>16 abr 1998</span>
+              <span class="flag">🇨🇿, 🇩🇪 CZE, GER</span>
             </div>
-        </section>
-<h3>Yorch Publicitario</h3>
+          </div>
+        </div>
+        <div class="mvp-card">
+          <img src="" alt="Reka Lelik">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>Reka Lelik</strong></span>
+            <div class="mvp-details">
+              <span>12 abr 1999</span>
+              <span class="flag">🇭🇺 HUN</span>
+            </div>
+          </div>
+        </div>
+        <div class="mvp-card">
+          <img src="" alt="A'ja Wilson">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>A'ja Wilson</strong></span>
+            <div class="mvp-details">
+              <span>07 ago 1996</span>
+              <span class="flag">🇺🇸 USA</span>
+            </div>
+          </div>
+        </div>
+        <div class="mvp-card">
+          <img src="" alt="LeBron James">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>LeBron James</strong></span>
+            <div class="mvp-details">
+              <span>28 dic 1984</span>
+              <span class="flag">🇺🇸 USA</span>
+            </div>
+          </div>
+        </div>
+        <div class="mvp-card">
+          <img src="" alt="Jerzy">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>Jerzy</strong></span>
+            <div class="mvp-details">
+              <span>-</span>
+              <span class="flag"></span>
+            </div>
+          </div>
+        </div>
+        <div class="mvp-card">
+          <img src="" alt="Bruno">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>Bruno</strong></span>
+            <div class="mvp-details">
+              <span>-</span>
+              <span class="flag"></span>
+            </div>
+          </div>
+        </div>
+        <div class="mvp-card">
+          <img src="" alt="Cameron">
+          <div class="mvp-info">
+            <span class="mvp-name"><strong>Cameron</strong></span>
+            <div class="mvp-details">
+              <span>-</span>
+              <span class="flag"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <section>
-                <p><strong>Nike</strong><br>SPONSOR</p>
-                <p>Clasificación Mundial FIBA, presentada por NIKE</p>
-                <div>
-                    <button>Hombre</button>
-                    <button>Mujer</button>
-                    <button>Niño</button>
-                    <button>Niña</button>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>PAIS</th>
-                            <th>+/-</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1.</td>
-                            <td>USA</td>
-                            <td>⬖0</td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Serbia</td>
-                            <td>⬖0</td>
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>Alemania</td>
-                            <td>⬖0</td>
-                        </tr>
-                        <tr>
-                            <td>4.</td>
-                            <td>Francia</td>
-                            <td>⬖0</td>
-                        </tr>
-                        <tr>
-                            <td>5.</td>
-                            <td>España</td>
-                            <td>⬖0</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button>Ver la clasificación completa</button>
-            </section>
-
+    <aside class="aside-right">
+      <div class="aside-ad">
+        <img src="https://via.placeholder.com/310x160.png?text=Mercado+Libre" alt="Mercado Libre Ad">
+        <button class="ad-btn">Saber más</button>
+      </div>
+      <div class="clasificacion-box">
+        <div class="clasificacion-header">
+          <span class="sponsor-dot"></span>
+          <span class="sponsor-text">Nike</span>
+          <span class="sponsor-label">sponsor</span>
+        </div>
+        <span class="clasificacion-title">Clasificación Mundial FIBA, presentada por NIKE</span>
+        <div class="clasificacion-tabs">
+          <button class="tab active">Hombre</button>
+          <button class="tab">Mujer</button>
+          <button class="tab">Niño</button>
+          <button class="tab">Niña</button>
+        </div>
+        <table class="clasificacion-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>PAÍS</th>
+              <th>+/-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>USA</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Serbia</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Alemania</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Francia</td>
+              <td>=0</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>España</td>
+              <td>=0</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="ver-todo-btn">VER LA CLASIFICACIÓN COMPLETA</button>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>

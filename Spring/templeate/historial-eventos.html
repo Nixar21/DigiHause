@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>ELBASK</title>
-
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELBASK - Historial de Eventos</title>
+  <link rel="stylesheet" href="../static/Historial.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>ELBASK</h1>
-    <nav>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Partidos</a></li>
-                <li><a href="#">Noticia</a></li>
-                <li><a href="#">Clasificación</a></li>
-                <li><a href="#">Calendario</a></li>
-                <li><a href="#">Más</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">ES</a></li>
+  <header class="navbar">
+    <span class="logo">ELBASK</span>
+    <nav class="navbar-menu">
+      <a href="#"><span class="icon">&#8962;</span> Inicio</a>
+      <a href="#"><span class="icon">&#9917;</span> Partidos</a>
+      <a href="#"><span class="icon">&#128240;</span> Noticia</a>
+      <a href="#"><span class="icon">&#128202;</span> Clasificación</a>
+      <a href="#"><span class="icon">&#128197;</span> Calendario</a>
+      <a href="#"><span class="icon">&#8942;</span> Mas</a>
     </nav>
-</header>
-
-<div>
-    <div>
-    <h2>Historial de eventos</h2>
-    <div>
+    <div class="navbar-right">
+      <button class="login-btn">Login</button>
+      <div class="lang">
+        <span class="icon">&#127760;</span> ES <span class="icon">&#9662;</span>
+      </div>
+    </div>
+  </header>
+  <main class="main-grid">
+    <section class="eventos-section">
+      <h2 class="section-title">Historial de eventos</h2>
+      <div class="search-bar">
         <input type="text" placeholder="Buscando un equipo nacional...">
-    </div>
-    <div>
-        <button>FIBA Women's Basketball World Cup</button>
-        <button>FIBA Basketball World Cup</button>
-        <button>FIBA Women’s AfroBasket</button>
-        <button>FIBA AfroBasket</button>
-        <button>FIBA Women’s AmeriCup</button>
-        <button>FIBA AmeriCup</button>
-        <button>FIBA Women’s Asia Cup</button>
-        <button>FIBA Asia Cup</button>
-        <button>FIBA Women’s EuroBasket</button>
-        <button>FIBA EuroBasket</button>
-    </div>
-    </div>
-    <div>
-        <p><strong>Nike</strong><br><small>SPONSOR</small></p>
-        <p>Clasificación Mundial FIBA, presentada por NIKE</p>
-        <table>
-        <tr>
-            <th>#</th>
-            <th>PAIS</th>
-            <th>+/-</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>USA</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Serbia</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Alemania</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td>Francia</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>5.</td>
-            <td>España</td>
-            <td>0</td>
-        </tr>
+        <button class="search-btn"><span class="icon">&#128269;</span></button>
+      </div>
+      <hr class="divider">
+      <h3 class="subtitle">Acceso rapido</h3>
+      <div class="acceso-rapido">
+        <button class="acceso-btn">FIBA Women's Basquetball World Cup <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA Basquetball World Cup <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA Women's AfroBasket <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA AfroBasket <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA Women's AmeriCup <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA AmeriCup <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA Women's Asia Cup <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA Asia Cup <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA Women's EuroBasket <span class="chevron">&#8250;</span></button>
+        <button class="acceso-btn">FIBA EuroBasket <span class="chevron">&#8250;</span></button>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <div class="ad-box">
+        <img src="https://via.placeholder.com/320x140.png?text=Mercado+Libre" alt="Mercado Libre Ad">
+        <button class="ad-btn">Saber más</button>
+      </div>
+      <div class="clasificacion-box">
+        <div class="clasificacion-header">
+          <span class="sponsor-dot"></span>
+          <span class="sponsor-text">Nike</span>
+          <span class="sponsor-label">sponsor</span>
+        </div>
+        <span class="clasificacion-title">Clasificación Mundial FIBA, presentada por NIKE</span>
+        <div class="clasificacion-tabs">
+          <button class="tab active">Hombre</button>
+          <button class="tab">Mujer</button>
+          <button class="tab">Niño</button>
+          <button class="tab">Niña</button>
+        </div>
+        <table class="clasificacion-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>PAÍS</th>
+              <th>+/-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1.</td><td>USA</td><td>=0</td></tr>
+            <tr><td>2.</td><td>Serbia</td><td>=0</td></tr>
+            <tr><td>3.</td><td>Alemania</td><td>=0</td></tr>
+            <tr><td>4.</td><td>Francia</td><td>=0</td></tr>
+            <tr><td>5.</td><td>España</td><td>=0</td></tr>
+          </tbody>
         </table>
-        <a class="btn-full" href="#">VER LA CLASIFICACIÓN COMPLETA</a>
-    </div>
-    </div>
-    </div>
+        <button class="ver-todo-btn">VER LA CLASIFICACIÓN COMPLETA</button>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>
